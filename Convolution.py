@@ -6,7 +6,7 @@ import numpy as np
 def conv_2d(image,kernel, bias):
     kernel_size = kernel.shape[0]
     image_size = image.shape[0]
-    output_shape = image_size - kernel_size + 1  # output shape
+    output_shape = image_size - kernel_size + 1  # output shape = n - f + 1
     output = np.zeros((output_shape,output_shape))
     for row in range(image_size - 1):
         for col in range(image.shape[1]-1):
